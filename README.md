@@ -1,3 +1,3 @@
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2FGoogleCloudPlatform&psig=AOvVaw1KuftpEWBTFz2KKrlFiabC&ust=1749694026646000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiY16uk6I0DFQAAAAAdAAAAABAE ![image](https://github.com/user-attachments/assets/b52f367f-d2e0-4233-82b6-2c4683cd6a15)
+![image](https://github.com/user-attachments/assets/b52f367f-d2e0-4233-82b6-2c4683cd6a15)
 # GCP Data Engineering Project: Building and Orchestrating an ETL Pipeline for cricket data analysis to generate reports that are on https://www.iplt20.com/stats/<year> IPL website.
 In this repository I have a developed ETL data pipeline using GCP services like GCS, Big Query, Cloud composer(Airflow) and on premise Apache spark to demonstrate the use of hybrid cloud. the repository is python based
