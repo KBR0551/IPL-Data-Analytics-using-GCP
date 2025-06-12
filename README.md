@@ -5,3 +5,5 @@ In this repository I have a developed ETL data pipeline using GCP services like 
  - <img src="https://github.com/user-attachments/assets/729ae49d-7b4d-47ee-bd1c-7936fe26196c" width="20"/>  BigQuery serves as a serverless data warehouse
  - <img src="https://github.com/user-attachments/assets/d115e980-990b-4a04-9f3e-c55ae0b4123b" width="20"/>  Dataproc to run server less pyspark cluter to convert file format/trasnformations etc. 
 - <img src="https://github.com/user-attachments/assets/95c82bb0-70a3-4cd0-a3ca-277a6814a356" width="20"/> IAM to manage resource policies and permissions 
+
+These technologies work together to efficiently process, store, and generate reports on google cloud platform.
