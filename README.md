@@ -7,3 +7,5 @@ In this repository I have a developed ETL data pipeline using GCP services like 
 - <img src="https://github.com/user-attachments/assets/95c82bb0-70a3-4cd0-a3ca-277a6814a356" width="20"/> IAM to manage resource policies and permissions 
 
 These technologies work together to efficiently process, store, and generate reports on google cloud platform.
+
+![image](https://github.com/user-attachments/assets/8f1f480a-4ca1-4dca-ae94-60ee00110f29)
