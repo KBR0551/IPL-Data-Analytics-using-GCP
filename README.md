@@ -10,5 +10,15 @@ These technologies work together to efficiently process, store, and generate rep
 
 <img width="797" alt="image" src="https://github.com/user-attachments/assets/96d888cc-d2c6-42d2-a8c0-e2b0166033f0" />
 
+Resource setup
+ - google cloud account
+ - GCS Bucket creation and folders to organize code,data,configurations,dependencies,logs etc.
+   <img width="356" alt="image" src="https://github.com/user-attachments/assets/baea73e9-924f-443c-a509-6e3b8a16e098" />
+
+ - Basic Data procs cluster 
+   gcloud dataproc clusters create < cluster_name > --enable-component-gateway --region us-central1 --master-machine-type n1-standard-2 --master-boot-disk-size 100 --num-workers 2 -    worker-machine-type n1-standard-2 --worker-boot-disk-size 100 --image-version 2.1-debian11 --project vocal-chiller-457916-r2 --initialization-actions=gs://< bucket_name >/config/set_params.ksh
+
+ - 
+
 
 ![image](https://github.com/user-attachments/assets/8f1f480a-4ca1-4dca-ae94-60ee00110f29)
