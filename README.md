@@ -17,7 +17,6 @@ Resource setup
 
  - Basic Data procs cluster <br>
    ``gcloud dataproc clusters create < cluster_name > --enable-component-gateway --region us-central1 --master-machine-type n1-standard-2 --master-boot-disk-size 100 --num-workers 2 - worker-machine-type n1-standard-2 --worker-boot-disk-size 100 --image-version 2.1-debian11 --project vocal-chiller-457916-r2 --initialization-actions=gs://< bucket_name >/config/set_params.ksh``
- 
  Replace cluster_name & bucket_name
  - 
 
