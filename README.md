@@ -33,6 +33,9 @@ Upload the CSV files to your designated Google Cloud Storage (GCS) bucket. This 
 Create data sets `ipl_data_dwh`, `ipl_batting_stats`, `ipl_bowling_stats` to create table and store the raw data, create final bowling & batting stats data marts.
 Necessary SQL files will be stored in /sql directory as shown below.
 
+![image](https://github.com/user-attachments/assets/fa3ebbdd-dd02-4af8-bd37-1d030a8573ff)
+
+
 
 
 ![image](https://github.com/user-attachments/assets/4df03cfb-f11e-4a22-9fd8-5ad318784755)
