@@ -28,6 +28,13 @@ initialization-actions parameter to set up variables to later use in the pyspark
 
 Upload the CSV files to your designated Google Cloud Storage (GCS) bucket. This data has information on every ball bowled in each IPL match, season, player infromation, match venu information, teams information.etc. File will need to be uploaded to ``gs://<bucket>/data/raw_data``
 
+#  <img src="https://github.com/user-attachments/assets/729ae49d-7b4d-47ee-bd1c-7936fe26196c" width="40"/>
+
+Create data sets `ipl_data_dwh`, `ipl_batting_stats`, `ipl_bowling_stats` to create table and store the raw data, create final bowling & batting stats data marts.
+Necessary SQL files will be stored in /sql directory as shown below.
+
+
+
 ![image](https://github.com/user-attachments/assets/4df03cfb-f11e-4a22-9fd8-5ad318784755)
 
 
