@@ -26,7 +26,8 @@ initialization-actions parameter to set up variables to later use in the pyspark
 
 # <img src="https://github.com/user-attachments/assets/929c57e4-0cfe-4dd2-a0b4-751a7a92dc9e" width="40"/> GCS
 
-Upload the CSV files to your designated Google Cloud Storage (GCS) bucket. This data has information on every ball bowled in each IPL match, season, player infromation, match venu information, teams information.etc. File will need to be uploaded to gs://<bucket>/data/raw_data
+Upload the CSV files to your designated Google Cloud Storage (GCS) bucket. This data has information on every ball bowled in each IPL match, season, player infromation, match venu information, teams information.etc. File will need to be uploaded to ``gs://<bucket>/data/raw_data``
+
 ![image](https://github.com/user-attachments/assets/4df03cfb-f11e-4a22-9fd8-5ad318784755)
 
 
