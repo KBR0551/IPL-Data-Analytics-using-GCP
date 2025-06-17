@@ -60,6 +60,6 @@ Pyspark code to read csv files from `raw_data`, enforce schema and convert them 
   - data file: <pre> ```df=spark.read.csv(os.getenv("SOURCE_FILE_PATH")+f"{file_name}.csv",header=True, schema=schema,mode="FAILFAST")```</pre> <br> 
   where `SCHEMA_FILE_PATH` & `SOURCE_FILE_PATH` are evironment variable exported when creating dataproc cluster using ``--initialization-actions`` paramater.
 
-Created custome python modules to demonstrate the use how to use dependencies in pysparkcode passed at runtime using ``--py-files`` paramater, see ``pyspark_file_extract.py`` for more details (its basic and simple) <br>
+Created custome python modules to demonstrate the use of dependencies in pyspark code passed at runtime using ``--py-files`` paramater, see ``pyspark_file_extract.py`` for more details (its basic and simple) <br>
 
 ![image](https://github.com/user-attachments/assets/8f1f480a-4ca1-4dca-ae94-60ee00110f29)
