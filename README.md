@@ -10,7 +10,7 @@ These technologies work together to efficiently process, store, and generate rep
 
 <img width="797" alt="image" src="https://github.com/user-attachments/assets/96d888cc-d2c6-42d2-a8c0-e2b0166033f0" />
 
-Resource setup
+# <img src="https://github.com/user-attachments/assets/8195e8b0-b96f-4f39-bed6-d83db3df0827" width="40"/> Resource setup
  - google cloud account
  - GCS Bucket creation and folders to organize code,data,configurations,dependencies,logs etc.
    <img width="356" alt="image" src="https://github.com/user-attachments/assets/baea73e9-924f-443c-a509-6e3b8a16e098" />
