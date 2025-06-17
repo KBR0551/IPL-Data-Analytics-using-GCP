@@ -48,12 +48,12 @@ Necessary SQL files will be stored in /sql directory as shown below.
 Pyspark code to read csv files from `raw_data`, enforce schema and convert them to parquet format and store them in `parquer_data` directory. <br>
 ``pyspark_file_extract.py`` is parameterized to run again & again with different input file name ``--file_name``, run of running the pyspark code <br>
 
-``gcloud dataproc jobs submit pyspark gs://{GCS_BUCKET}/code/pyspark_file_extract.py \
+<pre> ```gcloud dataproc jobs submit pyspark gs://{GCS_BUCKET}/code/pyspark_file_extract.py \
                                  --cluster={DATA_PROC_ClUSTER} \
                                  --region={LOCATION} \
                                  --py-files=gs://{GCS_BUCKET}/dependencies/utility.zip \
                                  -- \
-                                --file_name {file_name}`` <br>
+                                --file_name {file_name}``` </pre>  <br>
    
   ``file_name`` paramater will be passed from command line as show above, the file_name paramater will pick up:
   - schema file: <pre> ```schema_path=os.getenv("SCHEMA_FILE_PATH")+f"{file_name}_schema.json" ``` </pre> <br>
