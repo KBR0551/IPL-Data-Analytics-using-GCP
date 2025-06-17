@@ -62,4 +62,9 @@ Pyspark code to read csv files from `raw_data`, enforce schema and convert them 
 
 Created custome python modules to demonstrate the use of dependencies in pyspark code passed at runtime using ``--py-files`` paramater, see ``pyspark_file_extract.py`` for more details (its basic and simple) <br>
 
+# <img src="https://github.com/user-attachments/assets/c474f33c-c3b9-4631-9703-d44965a8277b" width="40"/> Composer - Air Flow
+
+Finally, put all the peices together, to automate the process of end-to-end ETL flow using a orchestration tool like Air flow. (we are only atomating the data pipleline not the creation of infrastructure for that we can IaC tool like teraform). Used different Air flow google providers to ``BigQueryInsertJobOperator``, ``GCSToBigQueryOperator``, ``storage`` etc., to read data/configurations from CGS, connect to biqquery etc.
+
+Here I used air flow's ``TaskGroup`` functionality to group similar tasks together.
 ![image](https://github.com/user-attachments/assets/8f1f480a-4ca1-4dca-ae94-60ee00110f29)
