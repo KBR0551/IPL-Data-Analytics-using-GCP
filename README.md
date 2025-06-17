@@ -16,7 +16,7 @@ These technologies work together to efficiently process, store, and generate rep
    <img width="356" alt="image" src="https://github.com/user-attachments/assets/baea73e9-924f-443c-a509-6e3b8a16e098" />
 
  - Basic Data procs cluster <br>
-   ```gcloud dataproc clusters create < cluster_name > --enable-component-gateway --region us-central1 --master-machine-type n1-standard-2 --master-boot-disk-size 100 --num-workers 2 - worker-machine-type n1-standard-2 --worker-boot-disk-size 100 --image-version 2.1-debian11 --project vocal-chiller-457916-r2 --initialization-actions=gs://< bucket_name >/config/set_params.ksh```<br>
+   <pre> ```gcloud dataproc clusters create < cluster_name > --enable-component-gateway --region us-central1 --master-machine-type n1-standard-2 --master-boot-disk-size 100 --num-workers 2 - worker-machine-type n1-standard-2 --worker-boot-disk-size 100 --image-version 2.1-debian11 --project vocal-chiller-457916-r2 --initialization-actions=gs://< bucket_name >/config/set_params.ksh```</pre> <br>
 Replace cluster_name & bucket_name<br>
 initialization-actions parameter to set up variables to later use in the pyspark script<br>
 
@@ -56,8 +56,8 @@ Pyspark code to read csv files from `raw_data`, enforce schema and convert them 
                                 --file_name {file_name}`` <br>
    
   ``file_name`` paramater will be passed from command line as show above, the file_name paramater will pick up:
-  - schema file: <pre> ```python os.getenv("SCHEMA_FILE_PATH")+f"{file_name}_schema.json" ``` </pre> <br>
-  - data file: ``df=spark.read.csv(os.getenv("SOURCE_FILE_PATH")+f"{file_name}.csv",header=True, schema=schema,mode="FAILFAST")`` <br>
+  - schema file: <pre> ```schema_path=os.getenv("SCHEMA_FILE_PATH")+f"{file_name}_schema.json" ``` </pre> <br>
+  - data file: <pre> ```df=spark.read.csv(os.getenv("SOURCE_FILE_PATH")+f"{file_name}.csv",header=True, schema=schema,mode="FAILFAST")```</pre> <br>
   where `SCHEMA_FILE_PATH` & `SOURCE_FILE_PATH` are evironment variable exported when creating dataproc cluster using ``--initialization-actions`` paramater
 
 ![image](https://github.com/user-attachments/assets/8f1f480a-4ca1-4dca-ae94-60ee00110f29)
