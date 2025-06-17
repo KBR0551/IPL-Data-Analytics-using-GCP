@@ -46,7 +46,7 @@ Necessary SQL files will be stored in /sql directory as shown below.
 
 # <img src="https://github.com/user-attachments/assets/d115e980-990b-4a04-9f3e-c55ae0b4123b" width="40"/> Dataproc
 Pyspark code to read csv files from `raw_data`, enforce schema and convert them to parquet format and store them in `parquer_data` directory. <br>
-``pyspark_file_extract.py`` is parameterized to run again & again with different input file name ``--file_name``, run of running the pyspark code <br>
+``pyspark_file_extract.py`` is parameterized to run again & again with different input file name ``--file_name`` value <br>
 
 <pre> ```gcloud dataproc jobs submit pyspark gs://{GCS_BUCKET}/code/pyspark_file_extract.py \
                                  --cluster={DATA_PROC_ClUSTER} \
@@ -58,6 +58,8 @@ Pyspark code to read csv files from `raw_data`, enforce schema and convert them 
   ``file_name`` paramater will be passed from command line as show above, the file_name paramater will pick up:
   - schema file: <pre> ```schema_path=os.getenv("SCHEMA_FILE_PATH")+f"{file_name}_schema.json" ``` </pre> <br>
   - data file: <pre> ```df=spark.read.csv(os.getenv("SOURCE_FILE_PATH")+f"{file_name}.csv",header=True, schema=schema,mode="FAILFAST")```</pre> <br> 
-  where `SCHEMA_FILE_PATH` & `SOURCE_FILE_PATH` are evironment variable exported when creating dataproc cluster using ``--initialization-actions`` paramater
+  where `SCHEMA_FILE_PATH` & `SOURCE_FILE_PATH` are evironment variable exported when creating dataproc cluster using ``--initialization-actions`` paramater.
+
+Created custome python modules to demonstrate the use how to use dependencies in pysparkcode passed at runtime using ``--py-files`` paramater, see ``pyspark_file_extract.py`` for more details (its basic and simple) <br>
 
 ![image](https://github.com/user-attachments/assets/8f1f480a-4ca1-4dca-ae94-60ee00110f29)
