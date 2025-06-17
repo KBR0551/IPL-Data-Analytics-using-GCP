@@ -57,7 +57,7 @@ Pyspark code to read csv files from `raw_data`, enforce schema and convert them 
    
   ``file_name`` paramater will be passed from command line as show above, the file_name paramater will pick up:
   - schema file: <pre> ```schema_path=os.getenv("SCHEMA_FILE_PATH")+f"{file_name}_schema.json" ``` </pre> <br>
-  - data file: <pre> ```df=spark.read.csv(os.getenv("SOURCE_FILE_PATH")+f"{file_name}.csv",header=True, schema=schema,mode="FAILFAST")```</pre> <br>
+  - data file: <pre> ```df=spark.read.csv(os.getenv("SOURCE_FILE_PATH")+f"{file_name}.csv",header=True, schema=schema,mode="FAILFAST")```</pre> <br> 
   where `SCHEMA_FILE_PATH` & `SOURCE_FILE_PATH` are evironment variable exported when creating dataproc cluster using ``--initialization-actions`` paramater
 
 ![image](https://github.com/user-attachments/assets/8f1f480a-4ca1-4dca-ae94-60ee00110f29)
