@@ -37,10 +37,12 @@ Necessary SQL files will be stored in /sql directory as shown below.
 
 ![image](https://github.com/user-attachments/assets/fa3ebbdd-dd02-4af8-bd37-1d030a8573ff)
 
-
-
-
-
+`ipl_table_ddl.sql`: create table statemens to create table in `ipl_data_dwh` dataset.
+`bq_bowling_stats_temp_tables.sql`: create temp tables for bowling stats in bq which will later be used to create final bowling stats.
+`bq_batting_stats_temp_tables.sql`: create temp tables for batting stats in bq which will later be used to create final batting stats.
+`bowling_stats.sql`: sql's to create final bowling stats in `ipl_bowling_stats` dataset.
+`batting_stats.sql`: sql's to create final batting stats in `ipl_batting_stats` dataset.
+`cleanup_temp_tables.sql`: drop all temp tables created.
 
 
 ![image](https://github.com/user-attachments/assets/8f1f480a-4ca1-4dca-ae94-60ee00110f29)
