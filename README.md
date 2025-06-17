@@ -24,5 +24,6 @@ initialization-actions parameter to set up variables to later use in the pyspark
  - spin up a composer instance (Air flow) instance.
  - Assign Necessary permissions to service account.
 
+# <img src="https://github.com/user-attachments/assets/929c57e4-0cfe-4dd2-a0b4-751a7a92dc9e" width="40"/> GCS
 
 ![image](https://github.com/user-attachments/assets/8f1f480a-4ca1-4dca-ae94-60ee00110f29)
