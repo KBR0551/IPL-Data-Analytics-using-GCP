@@ -23,6 +23,7 @@ initialization-actions parameter to set up variables to later use in the pyspark
  - Create data sets in Biq Query `ipl_data_dwh`, `ipl_bowling_stats`, `ipl_batting_stats`
  - spin up a composer instance (Air flow) instance.
  - Assign Necessary permissions to service account.
+ NOTE: Code is paramaterized as much as possible so as to avoid harcoding the paths or credentials in the code. This is how we do it in our org
 
 # <img src="https://github.com/user-attachments/assets/929c57e4-0cfe-4dd2-a0b4-751a7a92dc9e" width="40"/> GCS
 
