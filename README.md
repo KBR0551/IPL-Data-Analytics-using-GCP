@@ -75,3 +75,12 @@ Here I used air flow's ``TaskGroup`` functionality to group similar tasks togeth
 Details of whats happening inside each Task:
 ![image](https://github.com/user-attachments/assets/21fa9e73-e1ee-49b7-869b-bca93aec848d)
 
+# Final Stats in Biq Query
+- Batting Stats:<br>
+  <img width="525" alt="image" src="https://github.com/user-attachments/assets/d86bf1fd-90c1-480e-a42b-dda014efc5cd" />
+
+- Bowling Stats:<br>
+  <img width="525" alt="image" src="https://github.com/user-attachments/assets/5831e3a1-6e98-4715-a773-3713688d2a12" />
+
+
+
