@@ -44,7 +44,7 @@ Necessary SQL files will be stored in /sql directory as shown below.
 `batting_stats.sql`: sql's to create final batting stats in `ipl_batting_stats` dataset.<br>
 `cleanup_temp_tables.sql`: drop all temp tables created.<br>
 
- ![image](https://github.com/user-attachments/assets/f264f083-5aa5-44ca-8b9d-140c51014c0b)
+ <img src="https://github.com/user-attachments/assets/f264f083-5aa5-44ca-8b9d-140c51014c0b" width="200"/>
 
 
 # <img src="https://github.com/user-attachments/assets/d115e980-990b-4a04-9f3e-c55ae0b4123b" width="40"/> Dataproc
