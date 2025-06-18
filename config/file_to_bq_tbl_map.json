@@ -1,0 +1,7 @@
+{
+  "ball_by_ball_info": "ball_by_ball_info.parquet",
+  "matches_info": "matches_info.parquet",
+  "player_info": "player_info.parquet",
+  "player_match_info": "player_match_info.parquet",
+  "teams_info": "teams_info.parquet"
+}

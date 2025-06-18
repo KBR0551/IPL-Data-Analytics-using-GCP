@@ -1,0 +1,6 @@
+[
+    {"name": "team_sk", "type": "integer", "nullable": false},
+    {"name": "team_id", "type": "integer", "nullable": false},
+    {"name": "team_name", "type": "string", "nullable": true}
+  ]
+  
