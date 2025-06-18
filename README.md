@@ -30,12 +30,12 @@ Upload the CSV files to your designated Google Cloud Storage (GCS) bucket. This 
 
 ![image](https://github.com/user-attachments/assets/4df03cfb-f11e-4a22-9fd8-5ad318784755)
 
-#  <img src="https://github.com/user-attachments/assets/729ae49d-7b4d-47ee-bd1c-7936fe26196c" width="40"/>
+#  <img src="https://github.com/user-attachments/assets/729ae49d-7b4d-47ee-bd1c-7936fe26196c" width="40"/> Biq Query
 
 Create data sets `ipl_data_dwh`, `ipl_batting_stats`, `ipl_bowling_stats` to create table and store the raw data, create final bowling & batting stats data marts.
 Necessary SQL files will be stored in /sql directory as shown below.
 
-![image](https://github.com/user-attachments/assets/fa3ebbdd-dd02-4af8-bd37-1d030a8573ff) Biq Query
+![image](https://github.com/user-attachments/assets/fa3ebbdd-dd02-4af8-bd37-1d030a8573ff) 
 
 `ipl_table_ddl.sql`: create table statemens to create table in `ipl_data_dwh` dataset.<br>
 `bq_bowling_stats_temp_tables.sql`: create temp tables for bowling stats in bq which will later be used to create final bowling stats.<br>
@@ -43,6 +43,9 @@ Necessary SQL files will be stored in /sql directory as shown below.
 `bowling_stats.sql`: sql's to create final bowling stats in `ipl_bowling_stats` dataset.<br>
 `batting_stats.sql`: sql's to create final batting stats in `ipl_batting_stats` dataset.<br>
 `cleanup_temp_tables.sql`: drop all temp tables created.<br>
+
+ ![image](https://github.com/user-attachments/assets/f264f083-5aa5-44ca-8b9d-140c51014c0b)
+
 
 # <img src="https://github.com/user-attachments/assets/d115e980-990b-4a04-9f3e-c55ae0b4123b" width="40"/> Dataproc
 Pyspark code to read csv files from `raw_data`, enforce schema and convert them to parquet format and store them in `parquer_data` directory. <br>
