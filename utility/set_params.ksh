@@ -1,3 +1,3 @@
 #!/bin/bash
-gsutil cp gs://vocal-chiller-457916-r2/config/.env /etc/profile.d/.env
+gsutil cp gs://BUCKET_NAME/config/.env /etc/profile.d/.env  #replace with your bucket name
 echo "source /etc/profile.d/.env" >> /etc/profile
