@@ -10,14 +10,14 @@ import re
 import json
 
 # Config 
-GCS_BUCKET = 'vocal-chiller-457916-r2'
-PROJECT_ID = 'vocal-chiller-457916-r2'
-LOCATION = 'us-central1'
+GCS_BUCKET = 'xxxxxxxxxxxxxxxxxxxxxx' #replace with you GcS bucket Name
+PROJECT_ID = 'xxxxxxxxxxxxxxxxxxxxxx' #replace with you GCP project ID
+LOCATION = 'GCP-ZONE' #replace with the GCP zone you are working in ex: us-central-1
 GCP_CONN_ID = 'google_cloud_default'
-BQ_DATASET_NM='ipl_data_dwh'
-BOWLING_STATS_DATASET_NM='ipl_bowling_stats'
-BATTING_STATS_DATASET_NM='ipl_batting_stats'
-DATA_PROC_ClUSTER='pyspark-dataproc-cluster'
+BQ_DATASET_NM='xxxx' #replace with bq dataset name where your tables and parquet file data is going to be stored 
+BOWLING_STATS_DATASET_NM='xxxxxx' #replace with bq dataset name where you will store bowling stats 
+BATTING_STATS_DATASET_NM='xxxxxx' #replace with bq dataset name where you will store batting stats 
+DATA_PROC_ClUSTER='xxxxxxxx' #dataproc cluster name
 
 
 # Function to read from gcs
