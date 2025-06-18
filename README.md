@@ -70,4 +70,8 @@ Created custome python modules to demonstrate the use of dependencies in pyspark
 Finally, put all the peices together, to automate the process of end-to-end ETL flow using a orchestration tool like Air flow. (we are only atomating the data pipleline not the creation of infrastructure for that we can IaC tool like teraform). Used different Air flow google providers to ``BigQueryInsertJobOperator``, ``GCSToBigQueryOperator``, ``storage`` etc., to read data/configurations from CGS, connect to biqquery etc.
 
 Here I used air flow's ``TaskGroup`` functionality to group similar tasks together. Below is the high level view of pipeline.
-![image](https://github.com/user-attachments/assets/8f1f480a-4ca1-4dca-ae94-60ee00110f29)
+<img src="https://github.com/user-attachments/assets/8f1f480a-4ca1-4dca-ae94-60ee00110f29" width="700"/> 
+
+Details of whats happening inside each Task:
+![image](https://github.com/user-attachments/assets/21fa9e73-e1ee-49b7-869b-bca93aec848d)
+
