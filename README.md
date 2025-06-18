@@ -1,4 +1,4 @@
-# <img src="https://github.com/user-attachments/assets/b52f367f-d2e0-4233-82b6-2c4683cd6a15" width="30"/> GCP Data Engineering Project: Building and Orchestrating an ETL Pipeline for cricket data analysis to generate reports that are on https://www.iplt20.com/stats/<year> IPL website.
+# <img src="https://github.com/user-attachments/assets/b52f367f-d2e0-4233-82b6-2c4683cd6a15" width="30"/> GCP Data Engineering Project: Building and Orchestrating an ETL Pipeline for cricket data analysis to generate reports like on https://www.iplt20.com/stats/<year> IPL website.
 In this repository I have a developed ETL data pipeline using GCP services like GCS, Big Query, Cloud composer(Airflow) and on premise Apache spark to demonstrate the use of hybrid cloud. the repository is python based.
  - <img src="https://github.com/user-attachments/assets/929c57e4-0cfe-4dd2-a0b4-751a7a92dc9e" width="20"/> GCS is used to store and manage the transactional data
  - <img src="https://github.com/user-attachments/assets/c474f33c-c3b9-4631-9703-d44965a8277b" width="20"/> Composer, a managed Apache Airflow service, is utilized to orchestrate Dataflow jobs 
