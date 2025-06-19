@@ -71,7 +71,7 @@ with DAG(
     with TaskGroup(group_id='create_bq_tables') as create_bq_tables: # 
         prev_task=None
         for idx, query in enumerate(ddl_queries):
-            match = re.search(r'`[^`]*\.(\w+)`\s*\(', query)
+            match = re.search(r'`[^`]*\.(\w+)`\s*\(', query) #gets the table name from the sql statement which is used for creating task 
             table_name = match.group(1).strip().replace('.', '_')  if match else f"table_{idx}"
             current_task=BigQueryInsertJobOperator(
                 task_id=f"create_{table_name}_table",
